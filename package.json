@@ -12,7 +12,5 @@
   "devDependencies": {
     "node-sass": "^4.9.3"
   },
-  "dependencies": {
-    "gh-pages": "^2.0.0"
-  }
+  "dependencies": {}
 }
