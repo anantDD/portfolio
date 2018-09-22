@@ -1,15 +1,15 @@
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 35px;
-  top: 35px;
+  right: 20px;
+  top: 20px;
   cursor: pointer;
 
   .btn-line {
     width: 28px;
     height: 3px;
     margin: 0px 0px 5px 0px;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeout;
   }
 
@@ -99,7 +99,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeout;
 
