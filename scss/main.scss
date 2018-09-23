@@ -10,6 +10,7 @@ body {
   background: $primary-color;
   color: set-text-color($primary-color);
   height: 100%;
+  // min-height: 100vh;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
@@ -47,8 +48,8 @@ header {
 }
 main {
   padding: 4rem;
-  height: 100%;
-  min-height: calc(100vh - $footer-height);
+  // height: 100%;
+  min-height: calc(100vh - #{$footer-height});
 
   .icons {
     margin-top: 1rem;
@@ -110,6 +111,24 @@ main {
 
     h3 {
       font-weight: 600;
+    }
+  }
+}
+
+//WORK
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.7rem;
+
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+    @include easeout;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
     }
   }
 }
